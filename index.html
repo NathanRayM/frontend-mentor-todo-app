@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <!--Start Header-->
+    <header>
+      <h1>TODO</h1>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+    </header>
+    <!--End Header-->
+    <!--Start Main Section-->
+    <main>
+      <!--Start Todo Input Container-->
+      <div class="todo-input-container">
+        <span class="check-placeholder"></span>
+        <input
+          id="input"
+          class="todo-input"
+          type="text"
+          name="toDoInput"
+          placeholder="Create a new todo..."
+          aria-label="Create a new todo"
+          autocomplete="off"
+        />
+      </div>
+      <!--End Todo Input Container-->
+      <!--Start Todo List-->
+      <ul id="task-list" class="ul-container"></ul>
+      <!--End Todo List-->
+      <!--Start status container-->
+      <div class="status-container">
+        <p class="count">
+          <span id="task-count" aria-live="polite"></span> items left
+        </p>
+        <ul class="filter-container-desktop">
+          <li class="filter-all active-filter">All</li>
+          <li class="filter-active">Active</li>
+          <li class="filter-completed">Completed</li>
+        </ul>
+        <button class="clear-completed">Clear Completed</button>
+      </div>
+      <!--End status container-->
+      <!--Start filter container-->
+      <div class="filter-container">
+        <button class="filter-all active-filter">All</button>
+        <button class="filter-active">Active</button>
+        <button class="filter-completed">Completed</button>
+      </div>
+      <!--End filter container-->
+      <!--Start Drag and drop test-->
+      <p class="drag-drop-text">Drag and drop to reorder list</p>
+      <!--End Drag and drop test-->
+    </main>
+    <!--End Main Section-->
+    <script src="script.js"></script>
+  </body>
+</html>
