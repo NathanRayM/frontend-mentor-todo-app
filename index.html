@@ -18,18 +18,22 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Todo app</title>
   </head>
-  <body>
+  <body class="dark">
     <!--Start Header-->
     <header>
       <h1>TODO</h1>
-      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button
+        type="button"
+        class="theme-toggle"
+        aria-label="Toggle theme"
+      ></button>
     </header>
     <!--End Header-->
     <!--Start Main Section-->
     <main>
       <!--Start Todo Input Container-->
-      <div class="todo-input-container">
-        <span class="check-placeholder"></span>
+      <label class="todo-input-container">
+        <span class="check-placeholder" aria-hidden="true"></span>
         <input
           id="input"
           class="todo-input"
@@ -39,7 +43,7 @@
           aria-label="Create a new todo"
           autocomplete="off"
         />
-      </div>
+      </label>
       <!--End Todo Input Container-->
       <!--Start Todo List-->
       <ul id="task-list" class="ul-container"></ul>
@@ -50,18 +54,18 @@
           <span id="task-count" aria-live="polite"></span> items left
         </p>
         <div class="filter-container-desktop">
-          <button class="filter-all active-filter">All</button>
-          <button class="filter-active">Active</button>
-          <button class="filter-completed">Completed</button>
+          <button type="button" class="filter-all active-filter">All</button>
+          <button type="button" class="filter-active">Active</button>
+          <button type="button" class="filter-completed">Completed</button>
         </div>
         <button class="clear-completed">Clear Completed</button>
       </div>
       <!--End status container-->
       <!--Start filter container-->
       <div class="filter-container">
-        <button class="filter-all active-filter">All</button>
-        <button class="filter-active">Active</button>
-        <button class="filter-completed">Completed</button>
+        <button type="button" class="filter-all active-filter">All</button>
+        <button type="button" class="filter-active">Active</button>
+        <button type="button" class="filter-completed">Completed</button>
       </div>
       <!--End filter container-->
       <!--Start Drag and drop test-->

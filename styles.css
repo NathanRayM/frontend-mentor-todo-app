@@ -67,6 +67,7 @@ ol {
   --filter-button-light: hsl(236, 9%, 61%);
   --filter-button-dark: hsl(235, 16%, 43%);
   --filter-button-color: var(--filter-button-light);
+  --input-caret-color: hsl(220, 98%, 61%);
 
   /*Icon Images*/
   --icon-moon: url(images/icon-moon.svg);
@@ -91,7 +92,7 @@ body {
 
 html {
   font-family: Josefin Sans, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 body {
@@ -167,8 +168,15 @@ main {
   margin-bottom: 1rem;
 }
 
+::placeholder {
+  color: var(--font-list-color);
+  opacity: 0.8;
+}
+
 .todo-input {
   width: 100%;
+  color: var(--font-list-color);
+  caret-color: var(--input-caret-color);
 }
 
 .todo-input:focus {
@@ -348,7 +356,7 @@ input[type="checkbox"]:checked {
   }
 
   .todo-input-container {
-    padding: 1rem 1rem;
+    padding: 1.05rem 1.5rem;
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
@@ -360,7 +368,7 @@ input[type="checkbox"]:checked {
 
   .list-item {
     font-size: 1rem;
-    padding: 1.1rem 1.5rem;
+    padding: 1.05rem 1.5rem;
   }
 
   input[type="checkbox"] {

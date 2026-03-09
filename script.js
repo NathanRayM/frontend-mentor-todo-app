@@ -45,7 +45,6 @@ displayTasks();
 
 // save tasks function setting local storage
 function saveTasks() {
-  let taskValue = input.value;
   localStorage.setItem("todos", JSON.stringify(tasks));
 }
 
