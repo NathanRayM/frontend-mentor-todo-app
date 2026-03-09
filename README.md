@@ -56,4 +56,4 @@ Overall, this project strengthened my confidence building a full interactive int
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my [solution](https://www.frontendmentor.io/solutions/interactive-rating-component---html-css-vanilla-js-XH7MvkT2Xl). It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on my [solution](https://www.frontendmentor.io/solutions/responsive-todo-app-vanilla-javascript-drag-and-drop-local-storage-AXoH1LdvDW). It definitely helps to find new ways to code and find easier solutions!
